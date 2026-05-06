@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -24,7 +24,7 @@
 ═══════════════════════════════════════════════════════ */
 
     html[data-theme="light"] .hero-sub {
-      color: #fff;
+      color: #ffffff;
     }
 
     :root {
@@ -40,7 +40,7 @@
     }
 
     /* ── Dark Theme ── */
-    [data-theme="dark"] {
+    /* [data-theme="dark"] {
       --bg: #080c10;
       --bg2: #0e1520;
       --bg3: #131b28;
@@ -57,7 +57,7 @@
       --btn-bg: #00aada;
       --btn-text: #ffffff;
       --shadow: 0 4px 40px rgba(0, 0, 0, .5);
-    }
+    } */
 
     /* ── Light Theme ── */
     [data-theme="light"] {
@@ -448,6 +448,10 @@
       max-width: 1100px;
       width: 100%;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 40px;
     }
 
     .hero-badge {
@@ -496,7 +500,7 @@
       color: #fff;
       line-height: 1.7;
       max-width: 580px;
-      margin: 20px auto 0;
+      margin: 36px auto 0;
       animation: fadeUp 1s .16s ease both;
     }
 
@@ -505,7 +509,7 @@
       gap: 14px;
       justify-content: center;
       flex-wrap: wrap;
-      margin-top: 32px;
+      margin-top: 48px;
       animation: fadeUp 1s .24s ease both;
     }
 
@@ -555,7 +559,7 @@
       gap: 18px;
       justify-content: center;
       flex-wrap: wrap;
-      margin-top: 48px;
+      margin-top: 72px;
       animation: fadeUp 1s .44s ease both;
     }
 
@@ -3125,7 +3129,9 @@
       opacity: 1;
     }
 
-
+    .t-label .sec-label {
+      display: none !important;
+    }
 
 
 
@@ -3571,13 +3577,7 @@
       <li><a href="#cta">Contact</a></li>
     </ul>
     <div class="nav-right">
-      <button class="theme-btn" id="themeBtn"
-        data-moon='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
-        data-sun='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>'><svg
-          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
-          stroke-width="2" fill="none">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg></button>
+
       <button class="nav-btn-ghost" onclick="window.open('https://customer.tes.com.pk/customer-lookup','_blank')">My
         Account</button>
       <button class="btn btn-primary btn-sm"
@@ -3587,12 +3587,13 @@
 
   <!-- ═══════════ HERO ═══════════ -->
   <section id="hero">
+
     <div class="hero-inner">
 
-      <div class="hero-badge">
+      <!-- <div class="hero-badge">
         <span class="pulse-dot"></span>
         #100Mbpsforall — Pakistan's Fastest Fiber Network
-      </div>
+      </div> -->
 
       <h1 class="hero-title">
         Experience the<br>
@@ -3612,7 +3613,7 @@
       </div>
 
       <!-- STATS -->
-      <div class="hero-stats">
+      <!-- <div class="hero-stats">
         <div class="stat-pill">
           <div class="stat-n">1<small style="font-size:2rem">G</small></div>
           <div class="stat-l">Max Speed</div>
@@ -3629,7 +3630,7 @@
           <div class="stat-n">24/7</div>
           <div class="stat-l">Hotline 1837</div>
         </div>
-      </div>
+      </div> -->
 
       <!-- HERO PACKAGE CARDS -->
       <div class="hero-pkgs">
@@ -3669,128 +3670,10 @@
       </div>
 
     </div>
+
   </section>
 
   <!-- ═══════════ MARQUEE ═══════════ -->
-  <div class="marquee-strip">
-    <div class="marquee-inner">
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-            </svg></span></em> Pakistan's Tier-1 Backbone</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.06a16 16 0 0 0 6.03 6.03l1.42-1.42a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg></span></em> FREE T2T Calls</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 12c-2-2.5-4-4-6-4a4 4 0 0 0 0 8c2 0 4-1.5 6-4zm0 0c2 2.5 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.5-6 4z" />
-            </svg></span></em> Unlimited Downloads</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <line x1="6" y1="12" x2="10" y2="12" />
-              <line x1="8" y1="10" x2="8" y2="14" />
-              <line x1="15" y1="13" x2="15.01" y2="13" />
-              <line x1="18" y1="11" x2="18.01" y2="11" />
-              <rect x="2" y="6" width="20" height="12" rx="2" />
-            </svg></span></em> Optizone Gaming Route</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
-              <polyline points="17 2 12 7 7 2" />
-            </svg></span></em> My TruTV App</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg></span></em> Kaspersky Security</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <polyline points="8 21 12 17 16 21" />
-              <line x1="12" y1="17" x2="12" y2="11" />
-              <path d="M7 4H4.5A2.5 2.5 0 0 0 2 6.5C2 8.99 3.01 11 5 12c.42.18.88.28 1.36.3" />
-              <path d="M17 4h2.5A2.5 2.5 0 0 1 22 6.5C22 8.99 20.99 11 19 12c-.42.18-.88.28-1.36.3" />
-              <path d="M7 4h10v7a5 5 0 0 1-10 0V4z" />
-            </svg></span></em> Fastest in Pakistan</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <path
-                d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" />
-            </svg></span></em> MacBook Neo Offer</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <polyline points="20 12 20 22 4 22 4 12" />
-              <rect x="2" y="7" width="20" height="5" />
-              <line x1="12" y1="22" x2="12" y2="7" />
-              <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
-              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
-            </svg></span></em> Refer & Win Rs 1,000</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-              <line x1="12" y1="18" x2="12.01" y2="18" />
-            </svg></span></em> My Transworld App</div>
-      <!-- duplicate for seamless loop -->
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-            </svg></span></em> Pakistan's Tier-1 Backbone</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.06a16 16 0 0 0 6.03 6.03l1.42-1.42a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg></span></em> FREE T2T Calls</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <path
-                d="M12 12c-2-2.5-4-4-6-4a4 4 0 0 0 0 8c2 0 4-1.5 6-4zm0 0c2 2.5 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.5-6 4z" />
-            </svg></span></em> Unlimited Downloads</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <line x1="6" y1="12" x2="10" y2="12" />
-              <line x1="8" y1="10" x2="8" y2="14" />
-              <line x1="15" y1="13" x2="15.01" y2="13" />
-              <line x1="18" y1="11" x2="18.01" y2="11" />
-              <rect x="2" y="6" width="20" height="12" rx="2" />
-            </svg></span></em> Optizone Gaming Route</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
-              <polyline points="17 2 12 7 7 2" />
-            </svg></span></em> My TruTV App</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg></span></em> Kaspersky Security</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <polyline points="8 21 12 17 16 21" />
-              <line x1="12" y1="17" x2="12" y2="11" />
-              <path d="M7 4H4.5A2.5 2.5 0 0 0 2 6.5C2 8.99 3.01 11 5 12c.42.18.88.28 1.36.3" />
-              <path d="M17 4h2.5A2.5 2.5 0 0 1 22 6.5C22 8.99 20.99 11 19 12c-.42.18-.88.28-1.36.3" />
-              <path d="M7 4h10v7a5 5 0 0 1-10 0V4z" />
-            </svg></span></em> Fastest in Pakistan</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <path
-                d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" />
-            </svg></span></em> MacBook Neo Offer</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <polyline points="20 12 20 22 4 22 4 12" />
-              <rect x="2" y="7" width="20" height="5" />
-              <line x1="12" y1="22" x2="12" y2="7" />
-              <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
-              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
-            </svg></span></em> Refer & Win Rs 1,000</div>
-      <div class="marquee-item"><em><span class="ico marquee-item"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-              <line x1="12" y1="18" x2="12.01" y2="18" />
-            </svg></span></em> My Transworld App</div>
-    </div>
-  </div>
 
   <!-- ═══════════ FEATURES — 3×2 GRID ═══════════ -->
   <section id="features" class="section par-section">
@@ -3800,7 +3683,7 @@
     <div class="blob blob-3"></div>
     <div class="wrap">
       <div class="section-header reveal">
-        <p class="t-label sec-label">Why Transworld</p>
+
         <h2 class="sec-title">Built for the <span class="accent">Next Generation</span></h2>
         <p class="t-sub sec-sub">TES is backed by a Tier-1 international submarine cable operator — the TW1 cable
           connecting Pakistan directly to the world.</p>
@@ -3896,7 +3779,7 @@
   <section id="offers" class="section-sm par-section" class="section-sm" style="background:var(--bg2)">
     <div class="wrap">
       <div class="section-header reveal">
-        <p class="t-label sec-label">Exclusive Deals</p>
+
         <h2 class="sec-title">Current <span class="accent">Offers</span></h2>
       </div>
       <div class="offers-grid">
@@ -3969,7 +3852,7 @@
     <div class="blob blob-3"></div>
     <div class="wrap">
       <div class="section-header reveal">
-        <p class="t-label sec-label">Pricing</p>
+
         <h2 class="sec-title">Choose Your <span class="accent">Speed</span></h2>
         <p class="t-sub sec-sub">All prices exclusive of applicable taxes. FREE T2T calls on every plan. 48-hour setup.
         </p>
@@ -4202,7 +4085,7 @@
     <div class="wrap">
       <div class="speed-wrap">
         <div class="reveal">
-          <p class="t-label sec-label">Interactive Demo</p>
+
           <h2 class="sec-title">Feel the <span class="accent">Difference</span></h2>
           <p class="t-sub sec-sub" style="margin-bottom:20px">Drag the slider to see how Transworld handles every
             activity from 40 Mbps all the way to 1 Gbps.</p>
@@ -4267,7 +4150,7 @@
     <div class="wrap">
       <div class="two-col">
         <div class="reveal">
-          <p class="t-label sec-label">Gaming</p>
+
           <h2 class="sec-title">Optizone — <span class="accent">Gaming Route</span> Optimization</h2>
           <p class="t-sub sec-sub">Experience the thrill of a lifetime. Optizone delivers the lowest possible latency
             for competitive gaming — dedicated routes, zero packet loss.</p>
@@ -4345,7 +4228,7 @@
             onerror="this.src='https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600&q=80'">
         </div>
         <div class="reveal" style="--d:.2s">
-          <p class="t-label sec-label">Entertainment</p>
+
           <h2 class="sec-title">My TruTV — <span class="accent">Ab Sab Aik Sath!</span></h2>
           <p class="t-sub sec-sub">Live TV, movies and entertainment — all in one app. Free with 500 Mbps and 1 Gbps
             plans for a full year.</p>
@@ -4386,7 +4269,7 @@
             style="width:100%;height:100%;object-fit:cover;object-position:center top;">
         </div>
         <div style="position:relative;z-index:1;">
-          <p class="t-label sec-label">Voice Services</p>
+
           <h2 class="sec-title" style="margin-bottom:12px">Unmatched <span class="accent">Voice Services</span></h2>
           <p class="t-sub sec-sub">FREE Transworld-to-Transworld calls across Pakistan. Crystal-clear HD voice on our
             fiber backbone.</p>
@@ -4430,7 +4313,7 @@
     <div class="wrap">
       <div class="two-col">
         <div class="reveal">
-          <p class="t-label sec-label">Availability</p>
+
           <h2 class="sec-title">Where <span class="accent">Light</span> Travels</h2>
           <p class="t-sub sec-sub">Pure FTTH fiber network live in Pakistan's three major cities — with rapid expansion
             underway.</p>
@@ -4497,7 +4380,7 @@
     <div class="wrap">
       <div class="two-col">
         <div class="reveal">
-          <p class="t-label sec-label">Mobile App</p>
+
           <h2 class="sec-title">Everything in the <span class="accent">My Transworld App</span></h2>
           <p class="t-sub sec-sub">Manage services, pay bills, track usage and renew your ID — all in one place.</p>
           <div class="app-feats">
@@ -4556,7 +4439,7 @@
   <section id="testimonials" class="section par-section" style="background:var(--bg2);overflow:hidden">
     <div class="wrap">
       <div class="section-header centered reveal">
-        <p class="t-label sec-label">Real Reviews</p>
+
         <h2 class="sec-title">What Our <span class="accent">Clients Say</span></h2>
       </div>
     </div>
@@ -4674,7 +4557,7 @@
     <div class="blob blob-3"></div>
     <div class="wrap">
       <div class="cta-panel reveal">
-        <p class="t-label sec-label" style="justify-content:center;display:flex">Ready to Upgrade?</p>
+        <!-- <p class="t-label sec-label" style="justify-content:center;display:flex">Ready to Upgrade?</p> -->
         <h2 class="cta-title">Upgrade Your Internet <span class="accent">Today</span></h2>
         <p class="cta-sub">Join thousands across Karachi, Lahore &amp; Islamabad experiencing Pakistan's fastest fiber
           network. Get connected in 48 hours.</p>
@@ -4967,13 +4850,13 @@
     })();
 
     // ═══════════════════════════════════════════════════════════════════
-    // THEME TOGGLE
+    // THEME TOGGLE (disabled)
     // ═══════════════════════════════════════════════════════════════════
-    document.getElementById('themeBtn').addEventListener('click', function () {
-      const dark = document.documentElement.getAttribute('data-theme') === 'dark';
-      document.documentElement.setAttribute('data-theme', dark ? 'light' : 'dark');
-      this.innerHTML = dark ? this.dataset.sun : this.dataset.moon;
-    });
+    // document.getElementById('themeBtn').addEventListener('click', function () {
+    //   const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    //   document.documentElement.setAttribute('data-theme', dark ? 'light' : 'dark');
+    //   this.innerHTML = dark ? this.dataset.sun : this.dataset.moon;
+    // });
 
     // ═══════════════════════════════════════════════════════════════════
     // BILLING TOGGLE
