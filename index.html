@@ -347,7 +347,7 @@
     }
 
     .nav-logo img {
-      height: 30px;
+      height: 45px;
     }
 
     [data-theme="dark"] .nav-logo img {
@@ -1486,9 +1486,15 @@
 
     .testi-track {
       display: flex;
-      gap: 18px;
       animation: marqueeX 38s linear infinite;
       width: max-content;
+      will-change: transform;
+    }
+
+    .testi-set {
+      display: flex;
+      gap: 18px;
+      padding-right: 18px;
     }
 
     .testi-card {
@@ -1624,7 +1630,7 @@
     }
 
     .f-logo-img {
-      height: 34px;
+      height: 45px;
       margin-bottom: 14px;
     }
 
@@ -2581,9 +2587,12 @@
     }
 
     [data-theme="light"] #nav {
-      background: rgba(255, 255, 255, .92) !important;
+      /* background: rgba(255, 255, 255, .92) !important;
       border-color: rgba(0, 170, 218, .22) !important;
-      box-shadow: 0 4px 28px rgba(0, 80, 160, .1) !important;
+      box-shadow: 0 4px 28px rgba(0, 80, 160, .1) !important; */
+      box-shadow: inset -1px -1px rgba(255, 255, 255, 0.3019607843), inset 1px 1px rgba(255, 255, 255, 0.7019607843);
+      background-color: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(16px);
     }
 
     [data-theme="light"] .nav-links a {
@@ -3542,8 +3551,10 @@
 
     /* Active nav link */
     .nav-links a.active {
-      color: var(--c-cyan) !important;
-      background: rgba(0, 170, 218, .08);
+      /* color: var(--c-cyan) !important;
+      background: rgba(0, 170, 218, .08); */
+      background: var(--c-cyan);
+      color: #fff;
     }
   </style>
 </head>
@@ -4265,8 +4276,8 @@
       <div class="voice-banner reveal" style="position:relative;overflow:hidden;">
         <div
           style="position:absolute;right:0;top:0;bottom:0;width:40%;overflow:hidden;opacity:.22;pointer-events:none;">
-          <img src="img-voice-call.jpg" alt="" aria-hidden="true"
-            style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          <!-- <img src="img-voice-call.jpg" alt="" aria-hidden="true"
+            style="width:100%;height:100%;object-fit:cover;object-position:center top;"> -->
         </div>
         <div style="position:relative;z-index:1;">
 
@@ -4444,106 +4455,139 @@
       </div>
     </div>
     <div class="testi-outer">
+
       <div class="testi-track">
-        <div class="testi-card">
-          <div class="testi-stars"><span class="stars">★★★★★</span></div>
-          <p class="testi-text">"I have been a happy Transworld customer for the past 5 years. The connection is
-            reliable, the speed is consistent, and whenever I needed assistance, their support team was very
-            responsive."</p>
-          <div class="testi-author">
-            <div class="testi-av">JI</div>
-            <div>
-              <div class="testi-name">Junaid Iftikhar</div>
-              <div class="testi-loc">Subscriber since early 2020</div>
+        <div class="testi-set">
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★★</span></div>
+            <p class="testi-text">"I have been a happy Transworld customer for the past 5 years. The connection is
+              reliable, the speed is consistent, and whenever I needed assistance, their support team was very
+              responsive."</p>
+            <div class="testi-author">
+              <div class="testi-av">JI</div>
+              <div>
+                <div class="testi-name">Junaid Iftikhar</div>
+                <div class="testi-loc">Subscriber since early 2020</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★★</span></div>
+            <p class="testi-text">"Transworld has truly set a benchmark in internet services — lightning-fast speed,
+              rock-solid stability, and flawless performance. Their complaint resolution time is record-breaking."</p>
+            <div class="testi-author">
+              <div class="testi-av">DZ</div>
+              <div>
+                <div class="testi-name">Dr. Zahid</div>
+                <div class="testi-loc">DHA-6 Lahore — Subscriber since 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★☆</span></div>
+            <p class="testi-text">"I'm quite happy with Transworld Internet Services, thanks to their responsive
+              customer
+              support and reliably decent internet speeds. Overall they've been reliable in meeting all my needs."</p>
+            <div class="testi-author">
+              <div class="testi-av">SA</div>
+              <div>
+                <div class="testi-name">Saima Asif</div>
+                <div class="testi-loc">DHA 1 Lahore — Subscriber since 2021</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★★</span></div>
+            <p class="testi-text">"Gaming from Lahore with zero lag. The fiber connection is unmatched — I've tried
+              other
+              ISPs and nothing comes close to Transworld's consistency for online gaming with Optizone."</p>
+            <div class="testi-author">
+              <div class="testi-av">ZA</div>
+              <div>
+                <div class="testi-name">Zain Ahmed</div>
+                <div class="testi-loc">Lahore subscriber</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★★</span></div>
+            <p class="testi-text">"Working from home became seamless. Video calls are crystal clear, uploads are fast —
+              this is what internet should feel like. The My Transworld App makes managing everything so easy."</p>
+            <div class="testi-author">
+              <div class="testi-av">NK</div>
+              <div>
+                <div class="testi-name">Nadia Khan</div>
+                <div class="testi-loc">Islamabad subscriber</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="testi-card">
-          <div class="testi-stars"><span class="stars">★★★★★</span></div>
-          <p class="testi-text">"Transworld has truly set a benchmark in internet services — lightning-fast speed,
-            rock-solid stability, and flawless performance. Their complaint resolution time is record-breaking."</p>
-          <div class="testi-author">
-            <div class="testi-av">DZ</div>
-            <div>
-              <div class="testi-name">Dr. Zahid</div>
-              <div class="testi-loc">DHA-6 Lahore — Subscriber since 2024</div>
+        <div class="testi-set" aria-hidden="true">
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★★</span></div>
+            <p class="testi-text">"I have been a happy Transworld customer for the past 5 years. The connection is
+              reliable, the speed is consistent, and whenever I needed assistance, their support team was very
+              responsive."</p>
+            <div class="testi-author">
+              <div class="testi-av">JI</div>
+              <div>
+                <div class="testi-name">Junaid Iftikhar</div>
+                <div class="testi-loc">Subscriber since early 2020</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★★</span></div>
+            <p class="testi-text">"Transworld has truly set a benchmark in internet services — lightning-fast speed,
+              rock-solid stability, and flawless performance. Their complaint resolution time is record-breaking."</p>
+            <div class="testi-author">
+              <div class="testi-av">DZ</div>
+              <div>
+                <div class="testi-name">Dr. Zahid</div>
+                <div class="testi-loc">DHA-6 Lahore — Subscriber since 2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★☆</span></div>
+            <p class="testi-text">"I'm quite happy with Transworld Internet Services, thanks to their responsive
+              customer
+              support and reliably decent internet speeds. Overall they've been reliable in meeting all my needs."</p>
+            <div class="testi-author">
+              <div class="testi-av">SA</div>
+              <div>
+                <div class="testi-name">Saima Asif</div>
+                <div class="testi-loc">DHA 1 Lahore — Subscriber since 2021</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★★</span></div>
+            <p class="testi-text">"Gaming from Lahore with zero lag. The fiber connection is unmatched — I've tried
+              other
+              ISPs and nothing comes close to Transworld's consistency for online gaming with Optizone."</p>
+            <div class="testi-author">
+              <div class="testi-av">ZA</div>
+              <div>
+                <div class="testi-name">Zain Ahmed</div>
+                <div class="testi-loc">Lahore subscriber</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><span class="stars">★★★★★</span></div>
+            <p class="testi-text">"Working from home became seamless. Video calls are crystal clear, uploads are fast —
+              this is what internet should feel like. The My Transworld App makes managing everything so easy."</p>
+            <div class="testi-author">
+              <div class="testi-av">NK</div>
+              <div>
+                <div class="testi-name">Nadia Khan</div>
+                <div class="testi-loc">Islamabad subscriber</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="testi-card">
-          <div class="testi-stars"><span class="stars">★★★★☆</span></div>
-          <p class="testi-text">"I'm quite happy with Transworld Internet Services, thanks to their responsive customer
-            support and reliably decent internet speeds. Overall they've been reliable in meeting all my needs."</p>
-          <div class="testi-author">
-            <div class="testi-av">SA</div>
-            <div>
-              <div class="testi-name">Saima Asif</div>
-              <div class="testi-loc">DHA 1 Lahore — Subscriber since 2021</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-stars"><span class="stars">★★★★★</span></div>
-          <p class="testi-text">"Gaming from Lahore with zero lag. The fiber connection is unmatched — I've tried other
-            ISPs and nothing comes close to Transworld's consistency for online gaming with Optizone."</p>
-          <div class="testi-author">
-            <div class="testi-av">ZA</div>
-            <div>
-              <div class="testi-name">Zain Ahmed</div>
-              <div class="testi-loc">Lahore subscriber</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-stars"><span class="stars">★★★★★</span></div>
-          <p class="testi-text">"Working from home became seamless. Video calls are crystal clear, uploads are fast —
-            this is what internet should feel like. The My Transworld App makes managing everything so easy."</p>
-          <div class="testi-author">
-            <div class="testi-av">NK</div>
-            <div>
-              <div class="testi-name">Nadia Khan</div>
-              <div class="testi-loc">Islamabad subscriber</div>
-            </div>
-          </div>
-        </div>
-        <!-- duplicates for seamless loop -->
-        <div class="testi-card">
-          <div class="testi-stars"><span class="stars">★★★★★</span></div>
-          <p class="testi-text">"I have been a happy Transworld customer for the past 5 years. The connection is
-            reliable, the speed is consistent, and whenever I needed assistance, their support team was very
-            responsive."</p>
-          <div class="testi-author">
-            <div class="testi-av">JI</div>
-            <div>
-              <div class="testi-name">Junaid Iftikhar</div>
-              <div class="testi-loc">Subscriber since early 2020</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-stars"><span class="stars">★★★★★</span></div>
-          <p class="testi-text">"Transworld has truly set a benchmark in internet services — lightning-fast speed,
-            rock-solid stability, and flawless performance. Their complaint resolution time is record-breaking."</p>
-          <div class="testi-author">
-            <div class="testi-av">DZ</div>
-            <div>
-              <div class="testi-name">Dr. Zahid</div>
-              <div class="testi-loc">DHA-6 Lahore — Subscriber since 2024</div>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-stars"><span class="stars">★★★★☆</span></div>
-          <p class="testi-text">"I'm quite happy with Transworld Internet Services, thanks to their responsive customer
-            support and reliably decent internet speeds. Overall they've been reliable in meeting all my needs."</p>
-          <div class="testi-author">
-            <div class="testi-av">SA</div>
-            <div>
-              <div class="testi-name">Saima Asif</div>
-              <div class="testi-loc">DHA 1 Lahore — Subscriber since 2021</div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
